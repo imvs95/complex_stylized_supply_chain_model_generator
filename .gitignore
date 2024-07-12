@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+*/__pycache__/*
+__pycache__
+.idea
+
+# Large files
+data/20231208_FINAL_ComplexSimModelGraph_GT_CNHK_USA_EventTimeSeries_ManufacturingTime1.5_Runtime364.csv
+data/20240418_QD_ComplexSimModelGraph_GT_CNHK_USA_EventTimeSeries_ManufacturingTime1.5_Runtime364.csv
+data/location_model_hpc_40000_cnhk_usa_airsea.pkl
+
+input/graph_networkx_SOUTHAMERICA_msc_route_with_distributions.pkl
+
+structure_model_composer/databases/random_hpc_50000_cnhk_usa_airsea.bak
+structure_model_composer/databases/random_hpc_50000_cnhk_usa_airsea.dat
+structure_model_composer/databases/random_hpc_50000_cnhk_usa_airsea.dir

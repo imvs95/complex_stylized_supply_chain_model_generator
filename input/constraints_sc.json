@@ -1,0 +1,106 @@
+{
+   "restrictions": {
+      "n_suppliers": 5,
+      "n_manufacturers": 5,
+      "n_wholesales_consolidators": 6,
+      "n_export_ports": 7,
+      "n_transit_ports": 10,
+      "n_import_ports": 6,
+      "n_wholesales_distributors": 3,
+      "n_large_retailers": 5,
+      "n_small_retailers": 10,
+      "n_end_customers" : 1
+   },
+   "chainage": {
+      "supplier": {
+         "echelon": 0,
+         "ingoing_entity": "none",
+         "outgoing_entity": "manufacturer",
+         "min_incoming_degree": 0,
+         "max_incoming_degree": 0,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": 3
+      },
+      "manufacturer": {
+         "echelon": 1,
+         "ingoing_entity": "supplier",
+         "outgoing_entity": "wholesales_consolidator",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": 3,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": 3
+      },
+      "wholesales_consolidator": {
+         "echelon": 2,
+         "ingoing_entity": "manufacturer",
+         "outgoing_entity": "export_port",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": 3,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": 3
+      },
+      "export_port": {
+         "echelon": 3,
+         "ingoing_entity": "wholesales_consolidator",
+         "outgoing_entity": ["transit_port", "import_port"],
+         "min_incoming_degree": 1,
+         "max_incoming_degree": 4,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": 3
+      },
+      "transit_port": {
+         "echelon": 4,
+         "ingoing_entity": ["export_port", "transit_port"],
+         "outgoing_entity": ["transit_port","import_port"],
+         "min_incoming_degree": 1,
+         "max_incoming_degree": -1,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": -1
+      },
+      "import_port": {
+         "echelon": 5,
+         "ingoing_entity": ["export_port","transit_port"],
+         "outgoing_entity": "wholesales_distributor",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": -1,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": -1
+      },
+      "wholesales_distributor": {
+         "echelon": 6,
+         "ingoing_entity": "wholesales_distributor",
+         "outgoing_entity": "large_retailer",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": -1,
+         "min_outcoming_degree": 1,
+         "max_outcoming_degree": -1
+      },
+      "large_retailer": {
+         "echelon": 7,
+         "ingoing_entity": "wholesales_distributor",
+         "outgoing_entity": ["small_retailer", "end_customer"],
+         "min_incoming_degree": 1,
+         "max_incoming_degree": 5,
+         "min_outcoming_degree": -1,
+         "max_outcoming_degree": -1
+      },
+      "small_retailer": {
+         "echelon": 8,
+         "ingoing_entity": "large_retailer",
+         "outgoing_entity": "end_customer",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": 5,
+         "min_outcoming_degree": -1,
+         "max_outcoming_degree": -1
+      },
+      "end_customer": {
+         "echelon": 9,
+         "ingoing_entity": ["large_retailer","small_retailer"],
+         "outgoing_entity": "none",
+         "min_incoming_degree": 1,
+         "max_incoming_degree": -1,
+         "min_outcoming_degree": -1,
+         "max_outcoming_degree": -1
+      }
+   }
+}

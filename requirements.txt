@@ -1,0 +1,7 @@
+matplotlib==3.7.1
+networkx==3.1
+numpy==1.24.3
+pandas==2.0.1
+pydsol-core==4.0.0
+pydsol-model==1.0.0
+scipy==1.11.1

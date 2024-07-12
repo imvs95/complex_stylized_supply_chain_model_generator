@@ -1,0 +1,8 @@
+{"('supplier', 'manufacturer')": [25, 200],
+  "('manufacturer', 'wholesales_consolidator')": [50, 300],
+  "('wholesales_consolidator', 'export_port')": [5, 150],
+  "('import_port', 'wholesales_distributor')": [5, 150],
+  "('wholesales_distributor', 'large_retailer')": [25, 150],
+  "('large_retailer', 'small_retailer')": [5, 50],
+  "('large_retailer', 'end_customer')": 0,
+  "('small_retailer', 'end_customer')": 0}
