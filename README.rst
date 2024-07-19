@@ -1,6 +1,6 @@
 Complex Stylized Supply Chain Model - Automatic Graph Generator
 ==========================================================================================================
-This repository present a complex stylized supply chain discrete event simulation model of a counterfeit Personal Protective Equipment (PPE) supply chain.
+This repository presents a complex stylized supply chain discrete event simulation model of a counterfeit Personal Protective Equipment (PPE) supply chain.
 The ground truth model is based on the following figure:
 
 .. image:: img_model_ppe.png
