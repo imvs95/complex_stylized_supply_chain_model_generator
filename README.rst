@@ -28,7 +28,8 @@ As counterfeit PPE is a case study, this repository can be used for any other su
 The simulation models are developed in `pydsol-core <https://github.com/averbraeck/pydsol-core>`_ and `pydsol-model <https://github.com/imvs95/pydsol-model>`_ .
 For the real-world data, we use the repository  `port_data_graphs <https://github.com/imvs95/port_data_graphs>`_ to create various graph structures based on open-source data.
 
-This repository is also part of the Ph.D. thesis of  `Isabelle M. van Schilt <https://www.tudelft.nl/staff/i.m.vanschilt/?cHash=74e749835b2a89c6c76b804683ffbbcf>`_, Delft University of Technology.
+This repository is also part of the Ph.D. thesis of  `Isabelle M. van Schilt <https://www.tudelft.nl/staff/i.m.vanschilt/?cHash=74e749835b2a89c6c76b804683ffbbcf>`_, Delft University of Technology. The version of the code used in the Ph.D. thesis is available at doi: `10.4121/48bdc725-a1db-4b87-8508-aee808713957.v1 <https://doi.org/10.4121/48bdc725-a1db-4b87-8508-aee808713957.v1>`_.
+The large datasets used in the Ph.D. thesis are available upon request, or at doi: `10.4121/adf4373c-7a9a-4d9c-a1ff-0f893d8d0b06.v1 <https://doi.org/10.4121/adf4373c-7a9a-4d9c-a1ff-0f893d8d0b06.v1>`_.
 The simulation model is used in the following repositories: `structure_calibration_sparse_data <https://github.com/imvs95/structure_calibration_sparse_data>`_ & `quality_diversity_sparse_data <https://github.com/imvs95/quality_diversity_sparse_data>`_.
 
 Content
